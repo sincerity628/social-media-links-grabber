@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Social Media Links Grabber",
+  "description": "Quickly grab the social media links on the page for you",
+  "version": "1.0",
+  "icons": {
+    "128": "images/icon_128.png"
+  },
+  "browser_action": {
+    "default_icon": "images/icon_19.png",
+    "default_popup": "popup.html"
+  }
+}
