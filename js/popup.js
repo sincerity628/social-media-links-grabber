@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 发送消息给 content_script 请求数据
   chrome.tabs.query({active: true, currentWindow: true}, (tabs) => {
     chrome.tabs.sendMessage(tabs[0].id, { msg: 'getData' }, (res) => {
-      if(res.res !== undefined) {
+      if(res.res === undefined) {
         // 添加数据到插件中
         addData(res);
       }
